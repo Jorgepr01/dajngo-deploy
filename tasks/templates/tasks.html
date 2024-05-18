@@ -1,0 +1,17 @@
+{% extends "layout/base.html" %}
+{% block content %}
+tarea
+<ul>
+    {% for task in tasks %}
+        <li><h2>{{task.title}}</h2></li>
+        <a href="{% url 'tasks_detail' task.id %}"> {{task.title}}--> {{task.id}} </a>
+        <p>{{task.descripccion}}</p>
+        <p>{{task.user}}</p>
+        {% if task.datecompleted %}
+        <p>{{task.datecompleted}}</p>
+        
+        {% endif %}
+    {% endfor %}
+</ul>
+
+{% endblock content %}

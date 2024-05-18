@@ -1,0 +1,14 @@
+{% extends "layout/base.html" %}
+{% block content %}
+<main class='container'>
+<form method="post" class='card card-body'>
+    <h1 >Signup</h1>
+    {{error}}
+    {% csrf_token %}
+{{from}}
+<input type="submit" value="Registrarse">
+</form>
+<main>
+    <h1>Signup</h1>
+    {{error}}
+{% endblock content %}

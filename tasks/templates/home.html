@@ -1,0 +1,27 @@
+{% extends "layout/base.html" %}
+{% load static %}
+{% block content %}
+
+<main class='container'>
+    <section class='card card-body'>
+        <h1 class='display-1 text-center'>Home</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas harum laboriosam veniam officiis. Similique quo rem assumenda, velit, unde perferendis aliquid rerum eos hic voluptate nam totam inventore accusantium sunt!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas harum laboriosam veniam officiis. Similique quo rem assumenda, velit, unde perferendis aliquid rerum eos hic voluptate nam totam inventore accusantium sunt!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas harum laboriosam veniam officiis. Similique quo rem assumenda, velit, unde perferendis aliquid rerum eos hic voluptate nam totam inventore accusantium sunt!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas harum laboriosam veniam officiis. Similique quo rem assumenda, velit, unde perferendis aliquid rerum eos hic voluptate nam totam inventore accusantium sunt!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas harum laboriosam veniam officiis. Similique quo rem assumenda, velit, unde perferendis aliquid rerum eos hic voluptate nam totam inventore accusantium sunt!
+        </p>
+        <div class='text-center'>
+            <a class='btn btn-primary' href='{% url "signin" %}'>signin</a>
+            <a class='btn btn-primary' href='{% url "signup" %}'>signup</a>
+        </div>
+    </section>
+
+</main>
+
+
+<img src="{% static 'img/saicol.jpg' %}" alt="logo" width='200px'>
+
+
+{% endblock content %}

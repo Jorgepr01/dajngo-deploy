@@ -1,0 +1,28 @@
+{% extends "layout/base.html" %}
+{% block content %}
+{{task}}
+{{error}}
+
+<form action={% url "updateTask" task.id %} method='post'>
+    {% csrf_token %}
+
+    {{form}}
+    <input type="submit" value="Update">
+</form>
+
+
+
+<form action={% url "completeTask" task.id  %} method='post'>
+    {% csrf_token %}
+    <input type="submit" value="conpleted">
+</form>
+
+
+<form action={% url "deleteTask" task.id  %} method='post'>
+    {% csrf_token %}
+    <input type="submit" value="Delete">
+</form>
+
+
+
+{% endblock content %}
